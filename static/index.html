@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📋 Task Manager</h1>
+            <p>A simple task management system</p>
+            
+            <!-- Dark Mode Toggle Button -->
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn" class="theme-btn">🌙 Dark Mode</button>
+            </div>
+        </header>
+
+        <!-- Statistics Cards -->
+        <div class="stats-container">
+            <div class="stat-card">
+                <h3>Total Tasks</h3>
+                <p id="total-tasks">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Completed</h3>
+                <p id="completed-tasks">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Pending</h3>
+                <p id="pending-tasks">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Progress</h3>
+                <p id="completion-percentage">0%</p>
+            </div>
+        </div>
+
+        <!-- Add Task Form -->
+        <div class="add-task">
+            <h2>➕ Add New Task</h2>
+            <form id="task-form">
+                <input type="text" id="task-title" placeholder="Task title" required>
+                <input type="text" id="task-description" placeholder="Description (optional)">
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All Tasks</button>
+            <button class="filter-btn" data-filter="pending">Pending</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <!-- Tasks List -->
+        <div class="tasks-section">
+            <h2>📝 Your Tasks</h2>
+            <div id="tasks-list" class="tasks-list">
+                <!-- Tasks will be loaded here -->
+                <p class="loading">Loading tasks...</p>
+            </div>
+        </div>
+
+        <!-- Danger Zone -->
+        <div class="danger-zone">
+            <h2>⚠️ Danger Zone</h2>
+            <button id="delete-all-btn" class="danger-btn">Delete All Tasks</button>
+        </div>
+    </div>
+
+    <!-- Edit Task Modal -->
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>✏️ Edit Task</h2>
+            <form id="edit-form">
+                <input type="hidden" id="edit-task-id">
+                <input type="text" id="edit-task-title" placeholder="Task title" required>
+                <input type="text" id="edit-task-description" placeholder="Description (optional)">
+                <button type="submit">Update Task</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

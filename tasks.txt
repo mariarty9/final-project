@@ -1,0 +1,7 @@
+{"id": 1, "title": "Buy groceries", "description": "Milk, eggs, bread, tea", "completed": true}
+{"id": 2, "title": "Call the repair shop", "description": "Worn brakes", "completed": false}
+{"id": 3, "title": "Prepare presentation slides", "description": "Team meeting on Monday 15:00", "completed": true}
+{"id": 4, "title": "Band rehearsal", "description": "Practice setlist for upcoming show", "completed": false}
+{"id": 5, "title": "Order new ink supply", "description": "Restock black and red", "completed": false}
+{"id": 6, "title": "Update portfolio", "description": "Add photos of recent work to website", "completed": false}
+{"id": 7, "title": "RECORD", "description": "Layer drums for the new demo", "completed": false}
