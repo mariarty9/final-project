@@ -445,7 +445,6 @@ function createTaskHTML(task) {
         </div>
     `;
 }
-
 /**
  * Escape HTML to prevent XSS attacks
  */
@@ -459,7 +458,6 @@ function escapeHTML(str) {
         .replace(/'/g, '&#039;')
         .replace(/`/g, '&#96;');
 }
-
 /**
  * Show a temporary notification (optional enhancement)
  */

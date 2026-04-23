@@ -597,7 +597,6 @@ body.dark-mode .edit-btn:hover {
         width: 95%;
     }
 }
-
 @media (max-width: 480px) {
     .stats-container {
         grid-template-columns: 1fr;
